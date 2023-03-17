@@ -22,7 +22,7 @@ h2 {
     margin-inline-start: 0;
     margin-inline-end: 0;
 }
-h2.blurb {	
+.blurb {	
 	color: #fff;
 	font-family: Playfair Display;
 	font-size: 1.6em;
@@ -114,14 +114,29 @@ nav {
 	a.menu-current {
 		display: none;
 	}
+	.lower-banner {
+	height: 4em;
+	}
+
+	.blurb {
+	font-size: 1.1em;
+	line-height: 1.1em;
+
+}
 	.shrink { 
 		padding: 25px 0;
+	}
+	.menu-bar {
+	height: 3em;
+}
+	.menu-bar-logo {
+		display: none;
 	}
 }
 /* Menu bar responsive up to 768px width */
 @media (min-width: 480px) and (max-width: 768px) {
 	.menu-bar {
-		bottom: 0;
+		top: 0;
 	}
 	a.menu-link {
 		display: none;
@@ -155,7 +170,6 @@ nav {
 	background: #000;
 	background-position: center;	
 	background-repeat: no-repeat;
-	height: 8em; 
 	position: relative; 
 	-webkit-box-shadow:0px 6px 6px #909090;
 	-moz-box-shadow:0px 6px 6px #909090;
@@ -206,6 +220,9 @@ nav {
 		background-position: center;
 		top: 70px;
 	}
+	.lower-banner {
+	height: 8em; 
+}
 	.banner-inner {
 		padding:25px 0 0;
 	}
