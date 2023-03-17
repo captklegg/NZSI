@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>About Café Papanui</title>
+		<!-- Style sheets -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/overlay-menu.css">
+		<link rel="stylesheet" href="css/gototop.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Google font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"> 
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+		<link rel="manifest" href="icon/site.webmanifest">
+		<!-- Jquery import -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+		<!-- Responsive header images -->
+		<style>
+		:root {
+			--header-image480: url(../img/header/about480.jpg);
+			--header-image768: url(../img/header/about768.jpg);
+			--header-image1200: url(../img/header/about1200.jpg);
+			--header-image1920: url(../img/header/about1920.jpg);
+		}
+		</style>
+	</head>
+	<body>
+		<!-- Top menu -->
+		<nav>
+			<!-- Desktop menu -->
+			<div class="menu-bar">  
+				<a class="menu-link" href="index.html">Home</a>
+				<a class="menu-link" href="menu.html">Menu</a>
+				<a class="menu-link" href="gallery.html">Gallery</a>
+				<a class="menu-current" href="about.html">About</a>
+				<a class="menu-link" href="contact.html">Contact</a>
+			</div>
+			<!-- Responsive menu -->
+			<div id="button-container">
+				<div id="center-menu">
+					<input type="checkbox" id="overlay-input" />
+					<label for="overlay-input" id="overlay-button" aria-label="Menu"><span></span></label>
+					<div id="overlay">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="menu.html">Menu</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- End top menu -->
+				
+		<!-- Header -->
+		<div class="banner">
+			<div class="banner-inner">
+				<h1 class="banner-title">Café Papanui</h1>
+				<h2 class="banner-subtitle">Ko Wai Mātou</h2>
+				<a href="menu.html" class="menu-button center-button">Our Menu</a>
+			</div>
+		</div>
+		<div class="lower-banner">
+			<h2 class="lower-banner-text">About Us</h2>
+		</div>
+		<!-- End header -->	
+		
+		<!-- Container -->
+		<div id="container">		
+			<!-- Content -->
+			<div id="content">
+				<h3 class="title">Who are we?</h3>
+				<div class="text-block">
+					<picture>
+						<source media="(min-width:768px)" srcset="img/cafepapanui600.jpg">
+						<source media="(max-width:767px)" srcset="img/cafepapanui400.jpg">
+						<img class="image-frame" src="img/cafepapanui600.jpg" alt="Café Papanui premises" style="width:auto;">
+						<p class="img-attr"><a href="https://goo.gl/maps/3sWEHBT36BZLyPKA7">Map data</a>, by <a href="https://www.google.com/maps/@36.6187243,138.1896162,15z">Google Maps</a> © 2020 Google</p>
+					</picture>
+					<p>Café Papanui is a family-run business established in the Christchurch suburb of Papanui in 1989 by the husband and wife team of Waipatu and April Te Awa.</p>
+					<p>Waipatu and April met while attending a chef training course at Christchurch Polytech in the mid 1980's. After completing their studies they worked as chefs in London for several years.</p>
+					<p>Upon their return to Christchurch they realised their dream of opening their own café by establishing Café Papanui.</p>
+					<p>Their daughter Maia joined the business in 2016.</p>
+					<div id="flex-container">
+						<div class="about"><p>Waipatu</p><img class="image-frame" src="img/about-waipatu.jpg" alt="Waipatu Te Awa" width="250" alt="Waipatu Te Awa"><p class="img-attr"><a href="https://www.pxfuel.com/en/free-photo-xwmip">"Chef"</a>, by <a href="https://www.pxfuel.com/">PXfuel</a>, licensed under <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">CC0</a></p></div>
+						<div class="about"><p>April</p><img class="image-frame" src="img/about-april.jpg" alt="April Te Awa" width="250px" alt="April Te Awa"><p class="img-attr"><a href="https://www.pexels.com/photo/woman-eating-on-cooking-pan-1587830/">"Woman Eating on Cooking Pan"</a>, by <a href="https://www.pexels.com/@juanpphotoandvideo">Juan Pablo Serrano Arenas</a>, licensed under <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">CC0</a></p></div>
+						<div class="about"><p>Maia</p><img class="image-frame" src="img/about-maia.jpg" alt="Maia Te Awa" width="250px" alt="Maia Te Awa"><p class="img-attr"><a href="https://unsplash.com/photos/XQWfro4LrVs">Photo</a>, by <a href="https://unsplash.com/@dahianawsz">Dahiana Waszaj</a>, licensed under <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">CC0</a></p></div> 
+					</div>
+				</div>
+				<div class="text-block">
+					<h3 class="title">Café Hours</h3>
+					<p class="center-text">We are open Tuesdays to Sundays<br>from 7 am to 3 pm.</p>
+					<p class="center-text">Closed on public holidays.</p>
+				</div>
+				<div class="center-div">
+					<p>Come by any time!</p>
+					<video width="75%" controls title="Video of a lunch set at a table">
+						<source src="img/video/lunch.mp4" type="video/mp4">
+						Your browser does not support HTML video.
+					</video>
+					<p class="img-attr"><a href="https://www.pexels.com/video/table-full-of-food-5101165/">Video</a>, by <a href="https://www.pexels.com/@jep-gambardella">Jep Gambardella</a>, licensed under <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">CC0</a></p>
+				</div>
+			</div>
+			<!-- End content -->
+			
+			<!-- Footer -->
+			<footer>
+				<p><strong>Follow Us</strong></p>
+				<!-- Note: no links for the social websites -->
+				<a href="#" title="Facebook"><img class="social-icon" src="img/social/facebook.png" alt="Facebook icon"></a><a href="#" title="Instagram"><img class="social-icon" src="img/social/instagram.png" alt="Instagram icon"></a><a href="#" title="Twitter"><img class="social-icon" src="img/social/twitter.png" alt="Twitter icon"></a>
+				<div><p class="img-attr">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p></div>
+				<a href="privacy.html">Privacy policy</a>
+				<p>&copy; Café Papanui 2021</p>
+			</footer>  
+			<!-- End footer -->
+				
+			<!-- Top of page button -->
+			<button class="gototop"  aria-label="To top"></button>
+		</div>
+		<!-- End container -->
+		
+		<!-- Scripts -->
+		<!-- Top of page button -->
+		<script type="text/javascript" src="js/gototop.js"></script>
+		<!-- Shrink menu on scroll -->
+		<script  src="js/shrink.js"></script>
+	</body>
+</html>

@@ -1,0 +1,461 @@
+html {
+	margin: 0;
+	padding: 0
+}
+body {
+	background: #ffffff;
+	font-family: Calibri,sans-serif;
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+	animation: bugfix infinite 1s;
+	-webkit-animation: bugfix infinite 1s;
+}
+* {box-sizing: border-box;}
+h2 {	
+	color: #000;
+	font-family: Montserrat;
+	font-size: 40px;
+	line-height: 40px;
+	margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+h2.blurb {	
+	color: #fff;
+	font-family: Playfair Display;
+	font-size: 1.6em;
+	line-height: 1.5em;
+	text-align: center;
+}
+h3 {	
+	color: #505050;
+	font-family: Montserrat;
+	font-size: 2em;
+}	
+
+nav {
+	font-family: Playfair Display;
+}
+
+/* Menu bar */
+.menu-main {
+     display: flex;
+     flex-direction: row;
+	padding: 0.5em 0; 
+	position: fixed; 
+     width: 100%;
+	 z-index: 9;
+}
+.image-holder{
+  width: 100%; 
+  padding: 0;
+  transition: transform 1s ease;
+  transform: scale(1);
+}
+
+.image-holder.scale-img{
+  transform: scale(0.75);
+}
+.menu-bar-logo {
+	background: #000000;
+	margin: 0;
+	transition: all 0.2s ease-in-out;
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+	width: 300px;
+	height: 3.09375em;
+	padding: 0;
+	z-index:10;
+}
+.menu-bar {
+	background: #000000;
+	margin: 0;
+	padding: 1.5em 0; 
+	position: fixed; 
+	text-align: center;
+	transition: all 0.2s ease-in-out;
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+	width: 100%;
+	height: 4.125em;
+	z-index:9;
+}
+
+.menu-link {
+	color: #fff;
+	font-weight: 700;
+	padding: 0 0.5em;
+	text-decoration: none;
+}
+
+.menu-active {
+
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(0.25turn, rgba(0,128,0), rgba(0,204,0));
+    border-image-slice: 1;
+    width:100%;
+	padding-bottom: 0.4em;
+}
+
+.menu-link:hover {
+	border-bottom: 3px solid #cccccc;
+}
+
+/* Menu bar responsive up to 480px width */
+@media (min-width: 320px) and (max-width: 480px) {
+	.menu-bar {
+		bottom: 0;
+	}
+	a.menu-link {
+		display: none;
+	}
+	a.menu-current {
+		display: none;
+	}
+	.shrink { 
+		padding: 25px 0;
+	}
+}
+/* Menu bar responsive up to 768px width */
+@media (min-width: 480px) and (max-width: 768px) {
+	.menu-bar {
+		bottom: 0;
+	}
+	a.menu-link {
+		display: none;
+	}
+	a.menu-current {
+		display: none;
+	}
+	.shrink { 
+		padding: 25px 0;
+	}
+}
+/* Menu bar responsive up to 1920px width */
+@media (min-width: 768px) and (max-width: 1920px) {
+	.menu-bar {
+		top: 0;
+	}
+	a.menu-link {
+		font-size: 1em;
+	}
+	a.menu-current {
+		font-size: 20px
+	}
+}
+/* Header banner and lower banner */
+.banner {
+	background-position: center;	
+	background-repeat: no-repeat;
+	height: 24em; 
+}
+.lower-banner {
+	background: #000;
+	background-position: center;	
+	background-repeat: no-repeat;
+	height: 8em; 
+	position: relative; 
+	-webkit-box-shadow:0px 6px 6px #909090;
+	-moz-box-shadow:0px 6px 6px #909090;
+	box-shadow:0px 6px 6px #909090;
+}
+/* Banner bar responsive up to 480px width */
+@media (min-width: 320px) and (max-width: 480px) {
+	.banner {
+		background: #000;
+		background-image: var(--header-image480);
+		background-position: center;
+		height: 300px;
+	}
+	.banner-inner {
+		padding: 25px 0 0;
+	}
+}
+/* Banner bar responsive up to 768px width */
+@media (min-width: 480px) and (max-width: 768px) {
+	.banner {
+		background: #000;
+		background-image: var(--header-image768);
+		background-position: center;
+		height: 400px;
+	}
+	.banner-inner {
+		padding: 30px 0 0;
+	}
+}
+/* Banner bar responsive up to 1200px width */
+@media (min-width: 768px) and (max-width: 1200px) {
+	.banner {
+		background: #000;
+		background-image: var(--header-image1200);
+		background-position: center;
+		top: 70px;
+	}
+	.banner-inner {
+		padding:40px 0 0;
+	}
+}
+/* Banner bar responsive up to 1920px width */
+@media (min-width: 1200px) and (max-width: 1920px) {
+	.banner {
+		background: #000;
+		background-image: var(--header-image1920);	
+		background-repeat: no-repeat;
+		background-position: center;
+		top: 70px;
+	}
+	.banner-inner {
+		padding:25px 0 0;
+	}
+}
+/* Banner bar responsive over 1920px width */
+@media (min-width: 1920px) {
+	.banner {
+		background: #000;
+		background-image: var(--header-image1920);
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 308px;
+		top: 70px;
+		width: 100%;
+	}
+	.banner-inner {
+		padding:25px 0 0;
+	}
+}
+h1.banner-title {
+	color: #ffffff;
+	font-family: Montserrat;
+	text-align: center;
+	text-shadow: 10px 10px 10px rgba(0,0,0,.9);
+	text-transform: uppercase;
+}
+h2.banner-subtitle {
+	color: white;
+	font-family: Montserrat;
+	font-size: 4vw;
+	text-align: center;
+	text-shadow: 3px 3px 3px rgba(0,0,0,.9);
+}
+/* Banner title responsive up to 480px width */
+@media (min-width: 320px) and (max-width: 480px) {
+	h1.banner-title {		
+		font-size: 11vw;
+		margin: 40px auto 25px;
+	}
+}
+/* Banner title responsive up to 768px width */
+@media (min-width: 481px) and (max-width: 768px) {
+	h1.banner-title {		
+		font-size: 10vw;
+		margin: 50px auto 25px;
+	}
+}
+/* Banner title responsive up to 1200px width */
+@media (min-width: 768px) and (max-width: 1200px) {
+	h1.banner-title {		
+		font-size: 9vw;
+		margin: 25px auto;
+	}	
+	h2.banner-subtitle {
+	font-size: 3vw;
+	margin: 20px auto;
+	}
+}
+/* Banner title responsive up to 1920px width */
+@media (min-width: 1200px) and (max-width: 1920px) {
+	h1.banner-title {
+		font-size: 100px;
+		margin: 25px auto;
+	}
+	h2.banner-subtitle {
+	font-size: 3vw;
+	margin: 25px auto;
+	}
+}
+/* Banner title responsive over 1920px width */
+@media (min-width: 1920px) {
+	h1.banner-title {
+		font-size: 110px;
+		margin: 15px auto;
+	}
+	h2.banner-subtitle {
+		font-size: 3em;
+		margin: 30px auto;
+	}
+}
+
+/* Container */
+#container {
+	background: #ffffff;
+	margin: 0 auto;
+}
+
+#content {
+	padding: 20px 20px 0;
+}
+/* Container responsive up to 400px width */
+@media (max-width: 400px) {
+	#container {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+	}
+	#content {
+		padding: 30px 10px 0;
+	}
+}
+/* Container responsive over 400px width */
+@media (min-width: 401px) {
+	#container {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
+/* Container responsive over 1200px width */
+@media (min-width: 1200px) 	{
+	#container {
+		width: 900px;
+		margin: 0 auto;
+	}
+}
+/* Menu button */
+.menu-button {
+	background-color: #476816;
+	border: 2px solid #ffff50;
+	border-radius: 16px;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	left: 50%;
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 1.5em;
+	margin: 15px 0;
+	padding: 8px 16px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 200px;
+}
+.menu-button-large {
+	width: 300px;
+}
+.menu-button:hover {
+	background: #1e3e0d;	
+}
+/* Button responsive up to 768px width */
+@media (max-width: 768px) {
+	.menu-button {
+	font-size: 1.2em;
+	line-height: 1.2em;
+	margin: 10px 0;
+	}
+}
+/* Padding for blocks of text */
+.text-block {
+	padding: 25px 0;
+}
+/* Centering for divs, text, or images */
+.center-text {
+	text-align: center;
+}
+.center-div {
+	padding: 20px 0;
+	position: relative;
+	text-align: center;
+}
+.image-frame {
+	border: 1px solid #000;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.image-frame-margin {
+	border: 1px solid #fff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:50px;
+}
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Image and video attribution */
+.img-attr {
+	font-size: 0.7em;
+	margin-bottom: 50px;
+	text-align: center;
+}
+/* Flex containers for images */
+#flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#flex-container > .about {
+  width: 260px;
+  margin: 10px;
+  text-align: center;
+}
+#flex-container > .menu-items {
+  width: 190px;
+  margin: 10px;
+  text-align: center;
+}
+#flex-container > .home {
+  width: 400px;
+  margin: 10px;
+}
+/* Footer */
+footer {
+	border-top: 1px solid #476816;
+	bottom: 75px;
+	font-size: 1em;
+	margin-top: 200px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+.social-icon {
+	padding: 0 5px;
+	width: 60px;
+}
+
+/* The code below is not mine - Title H3 */
+h3.title {
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	margin: 50px auto;
+}
+h3.title:before, h3.title:after {
+    content: '';
+    border-top: #476816 1px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+h3.title:after {
+    margin: 0 0 0 20px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+	h3.title {
+		font-size: 1.5em;
+		margin: 15px auto;
+	}
+	h3.title:before, h3.title:after {
+    border-top: none;
+	}
+}

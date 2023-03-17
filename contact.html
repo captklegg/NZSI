@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Contact Café Papanui</title>
+		<!-- Style sheets -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/overlay-menu.css">
+		<link rel="stylesheet" href="css/gototop.css">
+		<link rel="stylesheet" href="css/contact.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Google font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+		<link rel="manifest" href="icon/site.webmanifest">
+		<!-- Jquery import -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+		<!-- Responsive header images -->
+		<style>
+		:root {
+			--header-image480: url(../img/header/contact480.jpg);
+			--header-image768: url(../img/header/contact768.jpg);
+			--header-image1200: url(../img/header/contact1200.jpg);
+			--header-image1920: url(../img/header/contact1920.jpg);
+		}
+		</style>
+	</head>
+	<body>
+		<!-- Top menu -->
+		<nav>
+			<!-- Desktop menu -->
+			<div class="menu-bar">  
+				<a class="menu-link" href="index.html">Home</a>
+				<a class="menu-link" href="menu.html">Menu</a>
+				<a class="menu-link" href="gallery.html">Gallery</a>
+				<a class="menu-link" href="about.html">About</a>
+				<a class="menu-current" href="contact.html">Contact</a>
+			</div>
+			<!-- Responsive menu -->
+			<div id="button-container">
+				<div id="center-menu">
+					<input type="checkbox" id="overlay-input" />
+					<label for="overlay-input" id="overlay-button" aria-label="Menu"><span></span></label>
+					<div id="overlay">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="menu.html">Menu</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- End top menu -->
+				
+		<!-- Header -->
+		<div class="banner">
+			<div class="banner-inner">
+				<h1 class="banner-title">Café Papanui</h1>
+				<h2 class="banner-subtitle">Whakapai mai</h2>
+				<a href="menu.html" class="menu-button center-button">Our Menu</a>
+			</div>
+		</div>
+		<div class="lower-banner">
+			<h2 class="lower-banner-text">Contact</h2>
+		</div>
+		<!-- End header -->	
+		
+		<!-- Container -->
+		<div id="container">		
+			<!-- Content -->
+			<div id="content">
+				<h3 class="title" id="location">Find Us!</h3>	
+				<div class="text-block">			
+					<p class="center-text">We are located at 502 Papanui Road.</p>
+					<p class="center-text">You can call us at (03)999-9999.</p>
+					<!-- Map embed -->
+					<div style="text-decoration:none; overflow:hidden;max-width:90%;width:600px;height:600px;margin: 50px auto 0;">
+						<div id="gmapcanvas" style="height:100%; width:100%;max-width:100%;">
+							<iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=502+papanui+road&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" title="Map showing Cafe Papanui location"></iframe>
+						</div>
+						<a class="codefor-google-map" href="https://www.embed-map.com" id="make-mapinformation">https://www.embed-map.com</a><style>#gmapcanvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style>
+					</div>
+					<!-- End map embed -->
+					<p class="img-attr"><a href="https://goo.gl/maps/3sWEHBT36BZLyPKA7">Map</a>, by <a href="https://www.google.com/maps/@36.6187243,138.1896162,15z">Google Maps</a> &copy; 2020 Google</p>
+				</div>
+				<div class="text-block">
+					
+				</div>
+				<div class="text-block" id="message">
+					<h3 class="title">Message Us</h3>
+				</div>
+				<!-- Contact form -->
+				<div id="contact-box">
+					<div class="text-block">
+						<form action="#">
+							<label for="name">Your name</label><br>
+							<input type="text" id="fname" name="fname"><br>
+							<label for="email">Your email address</label><br>
+							<input type="text" id="lname" name="lname"><br>
+							<label for="reason">Reason for contacting us</label><br>
+							<select name="contactreason" form="reason" id="reason">
+								<option value="hello">I just want to say hello</option>
+								<option value="photo">I want to submit a photo for the gallery</option>
+								<option value="request">Request</option>
+								<option value="other">Other</option>
+							</select>
+							<label for="message">Message</label><br>
+							<textarea id="message" name="message" placeholder="Your message..." style="height:200px"></textarea><br>						
+							<input type="submit" id="submit" value="Submit">
+						</form> 
+					</div>
+				</div>
+				<!-- End contact form -->
+			</div>
+				
+			<!-- End content -->
+			
+			<!-- Footer -->
+			<footer>
+				<p><strong>Follow Us</strong></p>
+				<!-- Note: no links for the social websites -->
+				<a href="#" title="Facebook"><img class="social-icon" src="img/social/facebook.png" alt="Facebook icon"></a><a href="#" title="Instagram"><img class="social-icon" src="img/social/instagram.png" alt="Instagram icon"></a><a href="#" title="Twitter"><img class="social-icon" src="img/social/twitter.png" alt="Twitter icon"></a>
+				<div><p class="img-attr">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p></div>
+				<a href="privacy.html">Privacy policy</a>
+				<p>&copy; Café Papanui 2021</p>
+			</footer>   
+			<!-- End footer -->
+			
+			<!-- Top of page button -->
+			<button class="gototop"  aria-label="To top"></button>
+		</div>
+		<!-- End container -->
+		
+		<!-- Scripts -->
+		<!-- Top of page button -->
+		<script type="text/javascript" src="js/gototop.js"></script>
+		<!-- Shrink menu on scroll -->
+		<script  src="js/shrink.js"></script>
+	</body>
+</html>

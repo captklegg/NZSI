@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Café Papanui Menu</title>
+		<!-- Style sheets -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/overlay-menu.css">
+		<link rel="stylesheet" href="css/gototop.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Google font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"> 
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+		<link rel="manifest" href="icon/site.webmanifest">
+		<!-- Jquery import -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+		<!-- Responsive header images -->
+		<style>
+		:root {
+			--header-image480: url(../img/header/menu480.jpg);
+			--header-image768: url(../img/header/menu768.jpg);
+			--header-image1200: url(../img/header/menu1200.jpg);
+			--header-image1920: url(../img/header/menu1920.jpg);
+		}
+		</style>
+	</head>
+	<body>
+		<!-- Top menu -->
+		<nav>
+			<!-- Desktop menu -->
+			<div class="menu-bar">	  
+				<a class="menu-link" href="index.html">Home</a>
+				<a class="menu-current" href="#">Menu</a>
+				<a class="menu-link" href="gallery.html">Gallery</a>
+				<a class="menu-link" href="about.html">About</a>
+				<a class="menu-link" href="contact.html">Contact</a>
+			</div>
+			<!-- Responsive menu -->
+			<div id="button-container">
+				<div id="center-menu">
+					<input type="checkbox" id="overlay-input" />
+					<label for="overlay-input" id="overlay-button" aria-label="Menu"><span></span></label>
+					<div id="overlay">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="menu.html">Menu</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- End top menu -->
+				
+		<!-- Header -->
+		<div class="banner">
+			<div class="banner-inner">
+				<h1 class="banner-title">Café Papanui</h1>
+				<h2 class="banner-subtitle">Rārangi Kai</h2>
+				<a href="#" class="menu-button">Our Menu</a>
+			</div>
+		</div>
+		<div class="lower-banner">
+			<h2 class="lower-banner-text">Our Menus</h2>
+		</div>
+		<!-- End header -->	
+		
+		<!-- Container -->
+		<div id="container">
+			<!-- Content -->
+			<div id="content">
+				<h3 class="title">Brunch</h3>
+				<div class="text-block">
+					<p class="center-text">Enjoy brunch at one of our outdoor tables!</p>
+					<p class="center-text">Homemade muffins</p>
+					<p class="center-text">Fried bread with golden syrup and butter</p>
+					<p class="center-text">Pancakes with manuka honey</p>
+					<p class="center-text">Kiwifruit granola yoghurt</p>
+					<p class="center-text">Sliced avocado and tomato salad</p>
+					<p class="center-text">Grilled bacon and tomatoes</p>
+					<p class="center-text">Avocado and egg on toast</p>	
+				</div>
+				<div class="text-block">
+					<h3 class="title">Lunch</h3>
+					<p class="center-text">Hangi lamb with gravy</p>
+					<p class="center-text">Hangi chicken with herb bread stuffing</p>
+					<p class="center-text">Pork ribs with kumara, cabbage, potato</p>
+					<p class="center-text">Café Papanui beef burger with kumara spicy wedges</p>
+					<p class="center-text">Vegetarian noodles with organic salad</p>
+					<p class="center-text">Pacific seafood soup</p>
+					<p class="center-text">Grilled Salmon, beans, and potato</p>
+					<p class="center-text">Egg, bacon, sausage, and spam</p>
+				</div>
+				<div class="text-block">
+					<h3 class="title">Afternoon<br>Tea</h3>
+					<p class="center-text">Lemon scones with strawberry jam</p>
+					<p class="center-text">Fruit salad</p>
+					<p class="center-text">Crispy crumpets</p>
+					<p class="center-text">Grilled corn on the cob with butter</p>
+				</div>
+			</div>
+			<!-- End content -->
+			
+			<!-- Footer -->
+			<footer>
+				<p><strong>Follow Us</strong></p>
+				<!-- Note: no links for the social websites -->
+				<a href="#" title="Facebook"><img class="social-icon" src="img/social/facebook.png" alt="Facebook icon"></a><a href="#" title="Instagram"><img class="social-icon" src="img/social/instagram.png" alt="Instagram icon"></a><a href="#" title="Twitter"><img class="social-icon" src="img/social/twitter.png" alt="Twitter icon"></a>
+				<div><p class="img-attr">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p></div>
+				<a href="privacy.html">Privacy policy</a>
+				<p>&copy; Café Papanui 2021</p>
+			</footer>  
+			<!-- End footer -->
+			
+			<!-- Top of page button -->
+			<button class="gototop"  aria-label="To top"></button>
+		</div>
+		<!-- End container -->
+		
+		<!-- Scripts -->
+		<!-- Top of page button -->
+		<script type="text/javascript" src="js/gototop.js"></script>
+		<!-- Shrink menu on scroll -->
+		<script  src="js/shrink.js"></script>
+	</body>
+</html>

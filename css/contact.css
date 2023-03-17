@@ -1,0 +1,52 @@
+/* https://skillforge.com/how-to-fade-in-content-using-html-css-and-javascript/ */
+
+#contact-box {
+	width: 300px;
+	margin: auto;
+}
+	label{
+		font-weight:700;
+	}
+	input#fname, input#lname {
+		border:1px solid #ccc;
+		border-radius: 4px;
+		-webkit-border-radius:4px;
+		-moz-border-radius:4px;
+		height:30px;
+		margin:10px 0;
+		padding-left:5px;
+		width:310px;
+	}
+	select#reason {
+		border:1px solid #ccc;
+		border-radius: 4px;
+		-webkit-border-radius:4px;
+		-moz-border-radius:4px;
+		height:30px;
+		margin:10px 0;
+		padding-left:5px;
+		width:310px;
+	}
+	select option {
+		background: #fff;
+		color: #000;
+	}
+	input#submit {
+		background-color:purple;
+		border-radius:4px;
+		border:none;
+		color:#fff;
+		font-size: 1.2em;
+		margin:10px 0;
+		padding:10px 25px;
+	}
+	textarea {
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		font-family: Calibri,sans-serif;
+		margin:10px 0;
+		padding: 12px;
+		resize: none;
+		width: 310px;
+	}

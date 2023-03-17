@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!-- Style sheets -->
+		<title>Café Papanui gallery</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/overlay-menu.css">
+		<link rel="stylesheet" href="css/gototop.css">
+		<link rel="stylesheet" href="css/slideshow.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Google font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+		<link rel="manifest" href="icon/site.webmanifest">
+		<!-- Jquery import -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+		<!-- Responsive header images -->
+		<style>
+		:root {
+			--header-image480: url(../img/header/gallery480.jpg);
+			--header-image768: url(../img/header/gallery768.jpg);
+			--header-image1200: url(../img/header/gallery1200.jpg);
+			--header-image1920: url(../img/header/gallery1920.jpg);
+		}
+		</style>
+	</head>
+	<body>
+		<!-- Top menu -->
+		<nav>
+			<!-- Desktop menu -->
+			<div class="menu-bar">  
+				<a class="menu-link" href="index.html">Home</a>
+				<a class="menu-link" href="menu.html">Menu</a>
+				<a class="menu-current" href="gallery.html">Gallery</a>
+				<a class="menu-link" href="about.html">About</a>
+				<a class="menu-link" href="contact.html">Contact</a>
+			</div>
+			<!-- Responsive menu -->
+			<div id="button-container">
+				<div id="center-menu">
+					<input type="checkbox" id="overlay-input" />
+					<label for="overlay-input" id="overlay-button" aria-label="Menu"><span></span></label>
+					<div id="overlay">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="menu.html">Menu</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- End top menu -->
+		
+		<!-- Header -->
+		<div class="banner">
+			<div class="banner-inner">
+				<h1 class="banner-title">Café Papanui</h1>
+				<h2 class="banner-subtitle">Whakaahua</h2>
+				<a href="menu.html" class="menu-button center-button">Our Menu</a>
+			</div>
+		</div>
+		<div class="lower-banner">
+			<h2 class="lower-banner-text">Gallery</h2>
+		</div>
+		<!-- End header -->	
+		
+		<!-- Container -->
+		<div id="container">		
+			<!-- Content -->
+			<div id="content">
+				<h3 class="title">Customer photos</h3>
+				<p>Photos sent to us from our customers.</p>
+				<p>If you would like to submit a photo from your Café Papanui experience, <a href="contact.html#message">send us a message</a> on the contact page.</p>
+				<div class="text-block">
+					<!-- Javascript slideshow -->
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<div class="numbertext">1 / 4</div>
+							<img src="img/slideshow/pancakes.jpg" style="width:100%" alt="Pancakes with cream, blueberry, and strawberry">
+							<div class="text"><a class="grey" href="https://www.pexels.com/photo/pancakes-with-strawberry-blueberries-and-maple-syrup-718739/">Photo</a> by <a class="grey" href="https://www.pexels.com/@sydney-troxell-223521">Sydney Troxell</a>, licenced under <a class="grey" href="https://creativecommons.org/share-your-work/public-domain/cc0/">CC0</a></div>
+						</div>
+							<div class="mySlides fade">
+							<div class="numbertext">2 / 4</div>
+							<img src="img/slideshow/buffet.jpg" style="width:100%" alt="Buffett lunch spread">
+							<div class="text"><a class="grey" href="https://www.pexels.com/photo/lunch-table-salad-5876/">Photo</a> by <a class="grey" href="https://www.pexels.com/@kaboompics">Kaboompics</a>, licenced under <a class="grey" href="https://creativecommons.org/share-your-work/public-domain/cc0/">CC0</a></div>
+						</div>
+							<div class="mySlides fade">
+							<div class="numbertext">3 / 4</div>
+							<img src="img/slideshow/steaknchips.jpg" style="width:100%" alt="steak and chips on a plate">
+							<div class="text"><a class="grey" href="https://www.pexels.com/photo/photo-of-steak-and-french-fries-on-gray-plate-3535383/">Photo</a> by <a class="grey" href="https://www.pexels.com/@kasumi-loffler-829963">Kasumi Lofler</a>, licenced under <a class="grey" href="https://creativecommons.org/share-your-work/public-domain/cc0/">CC0</a></div>
+						</div>						
+						<div class="mySlides fade">
+							<div class="numbertext">4 / 4</div>
+							<img src="img/slideshow/noodles.jpg" style="width:100%" alt="Vegetarian noodles">
+							<div class="text"><a class="grey" href="https://www.pexels.com/photo/stir-fry-noodles-in-bowl-2347311/">Photo</a> by <a class="grey" href="https://www.pexels.com/@enginakyurt">Engin Akyurt</a>, licenced under <a class="grey" href="https://creativecommons.org/share-your-work/public-domain/cc0/">CC0</a></div>
+						</div>
+					</div>
+					<!-- End javascript slideshow -->
+					<br>
+					<div style="text-align:center">
+						<span class="dot"></span> 
+						<span class="dot"></span> 
+						<span class="dot"></span> 
+						<span class="dot"></span> 
+					</div>
+				</div>
+			</div>
+			<!-- End content -->
+			
+			<!-- Footer -->
+			<footer>
+				<p><strong>Follow Us</strong></p>
+				<!-- Note: no links for the social websites -->
+				<a href="#" title="Facebook"><img class="social-icon" src="img/social/facebook.png" alt="Facebook icon"></a><a href="#" title="Instagram"><img class="social-icon" src="img/social/instagram.png" alt="Instagram icon"></a><a href="#" title="Twitter"><img class="social-icon" src="img/social/twitter.png" alt="Twitter icon"></a>
+				<div><p class="img-attr">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p></div>
+				<a href="privacy.html">Privacy policy</a>
+				<p>&copy; Café Papanui 2021</p>
+			</footer>  
+			<!-- End footer -->
+			
+			<!-- Top of page button -->
+			<button class="gototop"  aria-label="To top"></button>
+		</div>
+		<!-- End container -->
+		
+		<!-- Scripts -->
+		<!-- Top of page button -->
+		<script type="text/javascript" src="js/gototop.js"></script>
+		<!-- Shrink menu on scroll -->
+		<script  src="js/shrink.js"></script>
+		
+		<!-- Slideshow script from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow -->
+		<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}    
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		  setTimeout(showSlides, 5000); // Change image every 5 seconds
+		}
+		</script>
+	</body>
+</html>
