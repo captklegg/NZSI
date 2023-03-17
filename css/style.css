@@ -124,9 +124,12 @@ nav {
 	}
 	.menu-bar {
 	height: 3em;
-}
+	}
 	.menu-bar-logo {
 		display: none;
+	}
+	.menu-bar {
+	height: 3em;
 	}
 }
 /* Menu bar responsive up to 768px width */
@@ -148,6 +151,9 @@ nav {
 	}
 	.menu-bar-logo {
 		display: none;
+	}
+	.menu-bar {
+	height: 3em;
 	}
 }
 /* Menu bar responsive up to 1920px width */
