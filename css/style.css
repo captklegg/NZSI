@@ -121,10 +121,6 @@ nav {
 	.blurb {
 	font-size: 1.1em;
 	line-height: 1.1em;
-
-}
-	.shrink { 
-		padding: 25px 0;
 	}
 	.menu-bar {
 	height: 3em;
@@ -136,7 +132,7 @@ nav {
 /* Menu bar responsive up to 768px width */
 @media (min-width: 480px) and (max-width: 768px) {
 	.menu-bar {
-		top: 0;
+		bottom: 0;
 	}
 	a.menu-link {
 		display: none;
@@ -144,8 +140,14 @@ nav {
 	a.menu-current {
 		display: none;
 	}
-	.shrink { 
-		padding: 25px 0;
+	.lower-banner {
+	height: 5em;
+	}.blurb {
+	font-size: 1.2em;
+	line-height: 1.2em;
+	}
+	.menu-bar-logo {
+		display: none;
 	}
 }
 /* Menu bar responsive up to 1920px width */

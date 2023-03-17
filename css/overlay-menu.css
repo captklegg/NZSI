@@ -1,21 +1,6 @@
 /* https://codepen.io/danhearn/pen/XprGrJ */
 
-@keyframes bugfix {
-  from {
-    padding: 0;
-  }
-  to {
-    padding: 0;
-  }
-}
-@-webkit-keyframes bugfix {
-  from {
-    padding: 0;
-  }
-  to {
-    padding: 0;
-  }
-}
+
 #overlay-button {
   bottom:0.5em;
   color: #cccccc;
