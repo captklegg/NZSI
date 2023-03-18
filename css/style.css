@@ -226,6 +226,7 @@ nav {
 		background-image: var(--header-image1920);	
 		background-repeat: no-repeat;
 		background-position: center;
+		height: 500px;
 		top: 70px;
 	}
 	.lower-banner {
