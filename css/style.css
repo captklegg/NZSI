@@ -4,7 +4,7 @@ html {
 }
 body {
 	background: #ffffff;
-	font-family: Calibri,sans-serif;
+	font-family: Helvetica,sans-serif;
 	font-size: 18px;
 	margin: 0;
 	padding: 0;
@@ -36,7 +36,7 @@ h3 {
 }	
 
 nav {
-	font-family: Roboto;
+	font-family: Helvetica;
 }
 
 /* Menu bar */
@@ -162,7 +162,7 @@ nav {
 		top: 0;
 	}
 	a.menu-link {
-		font-size: 1em;
+		font-size: 0.8em;
 	}
 	a.menu-current {
 		font-size: 20px
